@@ -4,7 +4,10 @@
   "description": "",
   "main": "scripts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build:styles": "sass ./src/styles/index.scss ./dist/styles.css",
+    "copy": "cp ./src/index.html ./dist/index.html"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/DenisTrubitcyn/DevelopmentTools/issues"
   },
-  "homepage": "https://github.com/DenisTrubitcyn/DevelopmentTools#readme"
+  "homepage": "https://github.com/DenisTrubitcyn/DevelopmentTools#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.4",
+    "jest": "^27.4.3",
+    "sass": "^1.44.0"
+  }
 }
